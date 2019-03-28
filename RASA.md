@@ -68,3 +68,23 @@ pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorfl
 ```bash
 pip install -r requirements.txt
 ```
+
+## Get Response through HTTP/Rest API
+
+- [RestInput](https://rasa.com/docs/core/connectors/#restinput)
+
+```bash
+curl -XPOST \
+ http://localhost:5005/webhooks/rest/webhook \
+ -H 'Content-Type: application/json' \
+ -d '{
+    "message": "hello"
+}'
+```
+
+- HTTP Endpoints `/conversations/{sender_id}/respond`
+
+
+```bash
+curl -XPOST --data '{"query": "hello"}' "localhost:5005/conversations/default/respond"
+```
