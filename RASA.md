@@ -88,3 +88,19 @@ curl -XPOST \
 ```bash
 curl -XPOST --data '{"query": "hello"}' "localhost:5005/conversations/default/respond"
 ```
+
+- HTTP Endpoints `/conversations/{sender_id}/tracker/events`
+
+```bash
+# Get the confidence of intend prediction
+curl -XPOST \
+"localhost:5005/conversations/default/tracker/events" \
+--data '{
+  "event": "agent",
+  "text": "Hello"
+  }' 
+```
+
+## Reference
+
+1. [NLP Behind Chatbots — Demystifying RasaNLU — #1 — Training](https://hackernoon.com/demystifying-rasa-nlu-1-training-91a08429c9fb)

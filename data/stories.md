@@ -14,6 +14,13 @@
 * name{"name":"Sam"}
  - utter_greet
  
+## story_lookup_task
+* lookup_by_faultcode
+  - utter_ask4code
+
+## story_get_21-00TASK_801
+* 21-00TASK_801
+  - utter_task
 
 ## story_joke_01
 * joke

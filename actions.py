@@ -8,6 +8,7 @@ import logging
 import requests
 import json
 from rasa_core_sdk import Action
+from rasa_core_sdk.events import  UserUtteranceReverted
 
 logger = logging.getLogger(__name__)
 
@@ -23,3 +24,17 @@ class ActionJoke(Action):
         joke = request['value']  # extract a joke from returned json response
         dispatcher.utter_message(joke)  # send the message back to the user
         return []
+
+class ActionDefaultFallback(Action):
+
+    def name(self):
+        return "action_default_fallback"
+
+    def run(self, dispatcher, tracker, domain):
+
+        # Fallback caused by Core
+        dispatcher.utter_template('utter_default', tracker)
+        # If doesn't return UserUtteranceReverted event
+        # The next predictions of your bot may become inaccurate, 
+        # as it is very likely that the fallback action is not present in your stories.
+        return [UserUtteranceReverted()]

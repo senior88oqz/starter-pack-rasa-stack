@@ -17,6 +17,26 @@
 - see you later alligator
 - we'll speak soon
 
+## intent:lookup_by_faultcode
+- Faultcode
+
+## intent:21-00TASK_801
+- [Smoke](fault) or [Fumes](fault) in the [Passenger Cabin](location) or [Flight Compartment](location), Reported During Flight, Smoke Stops With [Isolation Valve](part) Closed, [Right Pack](part) Switch Off - Fault Isolation
+- [Smoke](fault) or [fumes](fault) flow into the [passenger cabin](location) or the [flight compartment](location) through the [air distribution system](part) during flight.
+- This problem is usually caused by [contamination](cause) of the [air byoil](fluid), [glycol](fluid), [fuel](fluid), or [hydraulic fluid](fluid).
+- In flight, [contamination](cause) can be caused by [leakage](cause) of these fluids in one of the [engines](part).
+- [Smoke](fault) or [fumes](fault) can also be caused by [oil](fluid), [glycol](fluid), [hydraulic fluid](fluid), fuel fumes or exhaust fumes being ingested into the [inlet](part) of one of the engines.
+- From the [inlet](part),the [contaminant](fault) can go into the [pneumatic](part) and/or the [air conditioning system](part) and vaporize at higher temperatures.
+- [Fumes](fault) can also be caused by the use of petroleum jelly during maintenance of the [pneumatic ducts](part) or [air distribution ducts](part).
+- Make sure the fault report shows the [smoke](fault) or [fumes](fault) were stopped with the [isolation valve](part) closed, the [right pack](part) switch off, and the two [recirculation fans](part) off.
+- This means that the [No. 1 engine](part), the pneumatic air supply from the [No. 1 engine](part), the [left pack](part), and the related [airdistribution ducts](part) were not the source of the smoke or fumes.
+- The Fault Isolation procedure below tells you how to find the cause of smoke in the [No. 2 engine](part), the pneumatic air supply from the [No. 2 engine](part), the [right pack](part), the [recirculation system](part), and the [related air distribution ducts](part).
+- Do not do this procedure with the passengers or the crew on the airplane since it can cause [smoke](fault) or [fumes](fault) in the [passenger cabin](location).
+- [Contamination](fault) in the [Engine No. 2 pneumatic system](part)
+- [Hydraulic fluid](fluid) [leakage](fault)
+- [Contamination](fault) in the [air distribution system](part)
+- [Overheating](fault) of [recirculation fan](part)
+
 ## intent:greet
 - Hi
 - Hey
